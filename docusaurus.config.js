@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gryt',
   tagline: 'Open source chat platform',
-  url: 'https://gryt.vercel.com/',
+  url: 'https://gryt-docs.vercel.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
