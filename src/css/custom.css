@@ -3,6 +3,9 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* You can override the default Infima variables here. */
 :root {
@@ -19,12 +22,46 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: hsl(var(--p));
+  --ifm-color-primary-dark: hsl(var(--p));
+  --ifm-color-primary-darker: hsl(var(--p));
+  --ifm-color-primary-darkest: hsl(var(--p));
+  --ifm-color-primary-light: hsl(var(--p));
+  --ifm-color-primary-lighter: hsl(var(--p));
+  --ifm-color-primary-lightest: hsl(var(--p));
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-navbar-background-color: hsl(var(--b2));
+}
+
+@layer components {
+  .daisy-btn{
+    text-transform: none;
+  }
+}
+
+.tooltip {
+  --tooltip-offset:calc(100% + 6px + var(--tooltip-tail,0px));
+  --tooltip-tail-offset: calc(100% + 6px - var(--tooltip-tail));
+}
+
+.text-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.custom-container {
+  z-index: 0;
+  place-items: center;
+  padding: 2rem;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Rubik', sans-serif;
+}
+
+.heroHeight {
+  min-height: calc(100vh - var(--ifm-navbar-height));
 }
