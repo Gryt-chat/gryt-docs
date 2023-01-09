@@ -48,9 +48,9 @@ function SecondSection() {
           Ready to <span className="text-gradient bg-gradient-to-t from-pink-300 to-purple-500">learn?</span>
         </h2>
         <div className='flex flex-row gap-12'>
-          <Link className='daisy-btn' href='/docs/client/intro'>Client</Link>
+          <Link className='daisy-btn' href='/docs/category/client'>Client</Link>
 
-          <Link className='daisy-btn' href='/docs/server/intro'>Server</Link>
+          <Link className='daisy-btn' href='/docs/category/server'>Server</Link>
         </div>
       </div>
     </div>
