@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
+import { HiServerStack, HiChatBubbleLeft } from 'react-icons/hi2';
 
 export default function Home() {
   const description =
@@ -48,9 +48,9 @@ function SecondSection() {
           Ready to <span className="text-gradient bg-gradient-to-t from-pink-300 to-purple-500">learn?</span>
         </h2>
         <div className='flex flex-row gap-12'>
-          <Link className='daisy-btn' href='/docs/category/client'>Client</Link>
+          <Link style={{textDecoration: 'none'}} className='daisy-btn gap-2' href='/docs/category/client'><HiChatBubbleLeft className='w-4 h-4'/>Client</Link>
 
-          <Link className='daisy-btn' href='/docs/category/server'>Server</Link>
+          <Link style={{textDecoration: 'none'}} className='daisy-btn gap-2' href='/docs/category/server'><HiServerStack className='w-4 h-4'/>Server</Link>
         </div>
       </div>
     </div>
