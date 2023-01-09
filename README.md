@@ -1,3 +1,5 @@
+<img src="./static/img/meta/Gryt.chat.og.banner.png"/>
+
 # Website
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
