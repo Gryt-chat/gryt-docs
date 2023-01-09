@@ -96,6 +96,7 @@ const config = {
             label: 'Home',
             position: 'right',
             className: 'daisy-link',
+            target: '_self',
           },
         ],
       },
