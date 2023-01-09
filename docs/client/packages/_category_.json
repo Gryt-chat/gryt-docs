@@ -1,6 +1,6 @@
 {
-  "label": "Client",
-  "position": 100,
+  "label": "Packages",
+  "position": 1,
   "link": {
     "type": "generated-index"
   }
