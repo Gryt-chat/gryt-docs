@@ -7,7 +7,7 @@ import Head from '@docusaurus/Head';
 export default function Home() {
   const description =
     "Documentation for Gryt - The open source chat platform";
-  const imagePreview = '/img/meta/index.png';
+  const imagePreview = '/img/meta/Gryt.chat.og.banner.png';
   const site = 'https://gryt-docs.vercel.app/';
   return (
     <Layout
