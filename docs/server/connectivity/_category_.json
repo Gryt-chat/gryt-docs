@@ -1,6 +1,6 @@
 {
-  "label": "Server",
-  "position": 1,
+  "label": "Connectivity",
+  "position": 3,
   "link": {
     "type": "generated-index"
   }

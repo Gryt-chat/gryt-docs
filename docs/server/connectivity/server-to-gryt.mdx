@@ -1,0 +1,32 @@
+---
+sidebar_position: 1
+---
+
+# The solar system
+
+How exactly does your self-hosted server connect to gryt and what information is shared between each node?
+
+### The layers
+
+Gryt conists of three layers:
+- The solar system (Gryt's official servers used for authentication and server listing)
+- Planets (Self-hosted Gryt servers, with an admin panel)
+- Moons (Communities within planets, created by users that are admins of a planet. These can be accessed through the client)
+
+#### The solar system
+
+The solar system will provide you with user-authentication and a global server list. In short the solar system collects as little information about each user, and only provides the user with a list of available **public** servers.
+
+#### User authentication
+
+The solar system's user authentication is used to store basic information about users, such as their email, password and a list of servers they have joined. The information about your user is not shared with anyone, and planets cannot obtain this information.
+Planets can only request confirmation from the solar system when a user wishes to do an action that requires specific permissions.
+
+The reason we keep a list of servers that the user is a part of is so the client knows which servers to connect to after authenticating.
+
+#### Global server list
+
+The global server list acts like a community-center. You can browse servers if they are configured to be public
+
+### Figma Diagram of The solar system
+<iframe className="daisy-bordered daisy-bg-base-100 w-full rounded-2xl" width="1200" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FHK3NQRhyUJ8oPLROhvG337%2FGryt-Mother-Ship%3Fnode-id%3D0%253A1%26t%3DX1frlxbQ3WNbFZqr-1" allowfullscreen></iframe>

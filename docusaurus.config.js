@@ -80,15 +80,13 @@ const config = {
         title: 'Gryt',
         items: [
           {
-            to: 'docs/client/intro',
-            activeBasePath: 'docs/client',
+            to: 'docs/category/client',
             label: 'Client',
             position: 'left',
             className: 'daisy-link',
           },
           {
-            to: 'docs/server/intro',
-            activeBasePath: 'docs/server',
+            to: 'docs/category/server',
             label: 'Server',
             position: 'left',
             className: 'daisy-link',
@@ -100,6 +98,12 @@ const config = {
             className: 'daisy-link',
           },
         ],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
       },
       prism: {
         theme: lightCodeTheme,
