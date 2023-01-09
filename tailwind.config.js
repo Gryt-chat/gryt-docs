@@ -8,6 +8,9 @@ module.exports = {
   theme: {
     extend: {},
   },
+  safelist: [
+    'daisy-bordered', 'daisy-bg-base-100', 'w-full', 'rounded-2xl'
+],
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   
   // daisyUI config (optional)
