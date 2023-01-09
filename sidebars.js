@@ -23,7 +23,7 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: "client",
+          label: "Client",
           link: {
             type: 'generated-index',
           },
