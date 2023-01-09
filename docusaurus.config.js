@@ -93,6 +93,12 @@ const config = {
             position: 'left',
             className: 'daisy-link',
           },
+          {
+            to: 'https://gryt.chat/',
+            label: 'Home',
+            position: 'right',
+            className: 'daisy-link',
+          },
         ],
       },
       prism: {
