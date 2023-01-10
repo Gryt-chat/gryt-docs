@@ -29,7 +29,12 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.2.0"
+    "@docusaurus/module-type-aliases": "^2.2.0",
+    "@tsconfig/docusaurus": "^1.0.6",
+    "@typescript-eslint/parser": "^5.0.1",
+    "eslint": "^8.7.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.4"
   },
   "browserslist": {
     "production": [
