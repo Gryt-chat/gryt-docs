@@ -5,14 +5,11 @@ import Head from '@docusaurus/Head';
 import { HiServerStack, HiChatBubbleLeft } from 'react-icons/hi2';
 
 export default function Home() {
-  const description =
-    "Documentation for Gryt - The open source chat platform";
+  const description = 'Documentation for Gryt - The open source chat platform';
   const imagePreview = '/img/meta/Gryt.chat.og.banner.png';
   const site = 'https://gryt-docs.vercel.app/';
   return (
-    <Layout
-      title={`Home`}
-      description="Description will go into a meta tag in <head />">
+    <Layout>
       <Head>
         <meta name="title" content="Gryt" />
         <meta name="description" content={description} />
@@ -44,13 +41,27 @@ function SecondSection() {
       className="hero bg-base-200 text-neutral-content heroHeight z-10"
     >
       <div className="grid z-0 place-items-center container mx-auto text-center gap-6">
-        <h2 className="text-4xl font-extrabold md:text-6xl">
-          Ready to <span className="text-gradient bg-gradient-to-t from-pink-300 to-purple-500">learn?</span>
+        <h2 className="text-4xl font-extrabold md:text-6xl text-gradient bg-gradient-to-t from-pink-300 to-purple-500">
+          Get started
         </h2>
-        <div className='flex flex-row gap-12'>
-          <Link style={{textDecoration: 'none'}} className='daisy-btn gap-2' href='/docs/category/client'><HiChatBubbleLeft className='w-4 h-4'/>Client</Link>
+        <div className="flex flex-row gap-12">
+          <Link
+            style={{ textDecoration: "none" }}
+            className="daisy-btn gap-2"
+            href="/docs/category/client"
+          >
+            <HiChatBubbleLeft className="w-4 h-4" />
+            Client
+          </Link>
 
-          <Link style={{textDecoration: 'none'}} className='daisy-btn gap-2' href='/docs/category/server'><HiServerStack className='w-4 h-4'/>Server</Link>
+          <Link
+            style={{ textDecoration: "none" }}
+            className="daisy-btn gap-2"
+            href="/docs/category/server"
+          >
+            <HiServerStack className="w-4 h-4" />
+            Server
+          </Link>
         </div>
       </div>
     </div>
