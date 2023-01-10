@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Gryt',
+  title: 'Gryt Documentation',
   tagline: 'Open source chat platform',
   url: 'https://gryt-docs.vercel.app/',
   baseUrl: '/',
