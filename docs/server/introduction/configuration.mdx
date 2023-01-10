@@ -8,19 +8,20 @@ Docusaurus provides a set of scripts to help you generate, serve, and deploy you
 
 Once your website is bootstrapped, the website source will contain the Docusaurus scripts that you can invoke with your package manager:
 
-```json title="package.json"
+```json title="gryt.config.json"
 {
-  // ...
-  "scripts": {
-    "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
-    "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+  // General information about the server
+  "information": {
+    "name": "Uranus",
+    "description": "The brightest gryt community",
+    "tags": ["friendly", "open", "games", "dnd", "bring-a-friend"],
+  },
+
+  // Server limitations
+  "limitations": {
+    "video_max_bitrate": 6000,
+    "voice_max_bitrate": 320,
+    "file_max_size": "100M",
   }
 }
 ```
