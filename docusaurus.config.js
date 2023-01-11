@@ -38,8 +38,17 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/Gryt-chat/docs/tree/main',
+
+            remarkPlugins: [
+              [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
+              [require('docusaurus-remark-plugin-tab-blocks'), {}],
+            ],
+        },
+        pages: {
+          remarkPlugins: [require('@docusaurus/remark-plugin-npm2yarn'), require('docusaurus-remark-plugin-tab-blocks')]
         },
         blog: {
+          remarkPlugins: [require('docusaurus-remark-plugin-tab-blocks')],
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
