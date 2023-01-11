@@ -1,0 +1,42 @@
+---
+description: How to setup a Gryt Server.
+---
+
+# Setup
+
+## Node.js
+
+:::info Node.Js
+
+Node is required to run the server. **[Download it here](https://nodejs.org/en/download/)**
+
+:::
+
+:::warning Minimum version
+
+Node.js version 16.14 or above is required. Check your version with the command `node -v`.
+
+You can use **[nvm](https://github.com/nvm-sh/nvm)** for managing multiple Node versions.
+
+:::
+
+### Automatic setup
+
+_Copy and paste the text block below into cmd/terminal_
+
+```bash npm2yarn
+git clone https://github.com/Gryt-chat/server.git gryt-server
+cd gryt-server
+npm install
+npm run build
+npm run start
+
+```
+
+## Docker
+
+:::info Docker
+
+Docker is required to run a container. **[Follow the official installation guide to install Docker](https://docs.docker.com/engine/install/)**
+
+:::

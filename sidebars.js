@@ -43,7 +43,7 @@ const sidebars = {
             type: 'generated-index',
           },
           items: [
-            'server/introduction/installation',
+            'server/introduction/setup',
             'server/introduction/configuration',
             {
               type: 'category', label: 'Connectivity', link: { type: 'generated-index' }, items: [{
