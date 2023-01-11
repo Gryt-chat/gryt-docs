@@ -21,6 +21,10 @@
   --ifm-navbar-height: 5rem;
 }
 
+.menu__list {
+  transition-duration: 150ms !important;
+}
+
 .markdown * {
   --ifm-h1-font-size: 2em !important;
   --ifm-h2-font-size: 1.5em !important;
