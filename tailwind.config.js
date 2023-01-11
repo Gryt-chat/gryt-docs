@@ -11,7 +11,7 @@ module.exports = {
 
   safelist: [
     { pattern: /bg-./ },
-    { pattern: /daisy-./, variants: ["lg", "hover", "focus"] },
+    { pattern: /daisy-./ },
     { pattern: /text-./ },
     { pattern: /border-./ },
     { pattern: /w-./ },
