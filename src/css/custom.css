@@ -32,7 +32,7 @@
   --ifm-h4-font-size: 1em !important;
   --ifm-h5-font-size: 0.83em !important;
   --ifm-h6-font-size: 0.67em !important;
-  --prism-background-color: hsl(var(--n)) !important;
+  --prism-background-color: hsl(var(--b3)) !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
