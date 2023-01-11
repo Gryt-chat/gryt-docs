@@ -6,37 +6,50 @@ description: How to configure a Gryt Server.
 
 ## Config file
 
-The planet can be configured through the file **gryt.config.js**:
+The planet can be configured through the file **gryt.config.ts**.
 
-```js title="gryt.config.js"
-{
-  module.exports = {
-    // General information about the server
-    title: "Dagobah",
-    description: "One of the purest places in the galaxy within the Force"
-    tags: ["Friendly", "Games", "DnD", "Bring a friend", "Star Wars"],
-    url: "https://gryt-docs.vercel.app/",
+The config file is written in Typescript, meaning you will not be able to assign incompatible values. This results in more stability.
 
-    // Server limitations
-    video_max_bitrate: 6000,
-    voice_max_bitrate: 320,
-    file_max_size: "100M",
-  };
-}
+```ts title="gryt.config.ts"
+type configType = {
+  title: string;
+  description: string;
+  tags?: string[];
+  url?: string;
+  video_max_bitrate: number;
+  voice_max_bitrate: number;
+  file_max_size: number;
+};
+
+export const config: configType = {
+  // General information
+  title: "Dagobah",
+  description: "One of the purest places in the galaxy within the Force",
+  tags: ["Friendly", "Games", "DnD", "Bring a friend", "Star Wars"],
+  url: "https://gryt-docs.vercel.app/",
+
+  // Limitations
+  video_max_bitrate: 6000,
+  voice_max_bitrate: 320,
+  file_max_size: 100,
+};
 ```
 
-### Parameter explanation
+## Parameter explanation
 
-| Name          | Default     | Description                                                                                                            |
-| ------------- | ----------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `title`       | `Dagobah`   | The name of the planet. This is displayed to users in the client.                                                      |
-| `--host`      | `localhost` | Specify a host to use. For example, if you want your server to be accessible externally, you can use `--host 0.0.0.0`. |
-| `--no-open`   | `false`     | Do not open automatically the page in the browser.                                                                     |
-| `--config`    | `undefined` | Path to Docusaurus config file, default to `[siteDir]/docusaurus.config.js`                                            |
-| `--no-minify` | `false`     | Build website without minimizing JS/CSS bundles.                                                                       |
+### General information
 
-:::important
+| Name          | Default                  | Description                   | Visible to the user |
+| ------------- | ------------------------ | ----------------------------- | ------------------- |
+| `title`       | `'Dagobah'`              | The name of the planet        | Yes                 |
+| `description` | `'Some description'`     | The description of the planet | Yes                 |
+| `tags`        | `['aTag', 'anotherTag']` | Tags that describe the planet | Yes                 |
+| `url`         | `'https://gryt.chat'`    | The planet's homepage         | Yes                 |
 
-Please note that some functionality (for example, anchor links) will not work in development. The functionality will work as expected in production.
+### Limitations
 
-:::
+| Name                | Default | Description                                                        | Visible to the user |
+| ------------------- | ------- | ------------------------------------------------------------------ | ------------------- |
+| `video_max_bitrate` | `6000`  | Maximum video bitrate the planet transmits when streaming          | No                  |
+| `voice_max_bitrate` | `320`   | Maximum audio bitrate the planet transmits when in a voice call    | No                  |
+| `file_max_size`     | `100`   | Maximum allowed file size for user uploads, measured in megabytes. | Situational         |
