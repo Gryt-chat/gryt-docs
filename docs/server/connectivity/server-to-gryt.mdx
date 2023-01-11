@@ -6,7 +6,7 @@ sidebar_position: 1
 
 How exactly does your self-hosted server connect to gryt and what information is shared between each node?
 
-### The layers
+## The layers
 
 Gryt conists of three layers:
 
@@ -14,22 +14,22 @@ Gryt conists of three layers:
 - Planets (Self-hosted Gryt servers; hosted by **the community**)
 - Moons (Communities within planets, created by users that are admins of a planet; accessed by **you**)
 
-#### The sun
+### The sun
 
 The sun will provide you with user-authentication and a global server list. In short the sun collects as little information as possible about each user, and only provides the user with a list of available **public** servers.
 
-#### User authentication
+### User authentication
 
 The sun's user authentication is used to store basic information about users, such as their email, password and a list of servers they have joined. The information about your user is not shared with anyone, and planets cannot obtain this information.
 Planets can only request confirmation from the sun when a user wishes to do an action that requires specific permissions.
 
 The reason we keep a list of servers that the user is a part of is so the client knows which servers to connect to after authenticating.
 
-#### Global server list
+### Global server list
 
 The global server list acts like a community-center. You can browse servers if they are configured to be public
 
-### Figma Diagram of The solar system
+## Figma Diagram of The solar system
 
 <iframe
   className="daisy-bordered daisy-bg-base-100 w-full rounded-2xl"
