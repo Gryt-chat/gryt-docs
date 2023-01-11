@@ -41,13 +41,13 @@ function SecondSection() {
       className="hero bg-base-200 text-neutral-content heroHeight z-10"
     >
       <div className="grid z-0 place-items-center container mx-auto text-center gap-6">
-        <h2 className="text-4xl font-extrabold md:text-6xl text-gradient bg-gradient-to-t from-pink-300 to-purple-500">
+        <h2 className="text-4xl font-extrabold md:text-6xl text-gradient bg-gradient-to-t from-indigo-300 to-indigo-400">
           Get started
         </h2>
         <div className="flex flex-row gap-12">
           <Link
             style={{ textDecoration: "none" }}
-            className="daisy-btn gap-2"
+            className="daisy-btn daisy-btn-ghost gap-2"
             href="/docs/category/client"
           >
             <HiChatBubbleLeft className="w-4 h-4" />
@@ -56,7 +56,7 @@ function SecondSection() {
 
           <Link
             style={{ textDecoration: "none" }}
-            className="daisy-btn gap-2"
+            className="daisy-btn daisy-btn-ghost gap-2"
             href="/docs/category/server"
           >
             <HiServerStack className="w-4 h-4" />
