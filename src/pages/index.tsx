@@ -5,9 +5,9 @@ import Head from '@docusaurus/Head';
 import { HiServerStack, HiChatBubbleLeft } from 'react-icons/hi2';
 
 export default function Home() {
-  const description = 'Documentation for Gryt - The open source chat platform';
+  const description = "Documentation site for https://Gryt.chat";
   const imagePreview = '/img/meta/Gryt.chat.og.banner.png';
-  const site = 'https://gryt-docs.vercel.app/';
+  const site = 'https://docs.gryt.chat';
   return (
     <Layout>
       <Head>
