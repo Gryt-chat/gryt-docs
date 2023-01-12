@@ -12,6 +12,7 @@ import {
   BsFolderFill,
   BsPaperclip,
 } from "react-icons/bs";
+import { HiChatBubbleLeft, HiServerStack } from "react-icons/hi2";
 function CardContainer({ href, children }) {
   return (
     <Link
@@ -58,7 +59,11 @@ function CardCategory({ item }) {
   return (
     <CardLayout
       href={href}
-      icon={icon}
+      icon={
+        (item.label === "Client" && <HiChatBubbleLeft className="w-4 h-4" />) ||
+        (item.label === "Server" && <HiServerStack className="w-4 h-4" />) ||
+        icon
+      }
       title={item.label}
       description={description || null}
     />
