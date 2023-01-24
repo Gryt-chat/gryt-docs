@@ -27,16 +27,16 @@ module.exports = {
     styled: true,
     themes: [
       {
-        grytDocs: {
-          primary: "#818cf8",
-          secondary: "#BF95F9",
-          accent: "#FFB86B",
-          neutral: "#414558",
-          "base-100": "#272935",
-          info: "#8BE8FD",
-          success: "#52FA7C",
-          warning: "#F1FA89",
-          error: "#FF5757",
+        grytApp: {
+          primary: "#e6cd19",
+          secondary: "#D926AA",
+          accent: "#1FB2A5",
+          neutral: "#191D24",
+          "base-100": "#2A303C",
+          info: "#3abff8",
+          success: "#36d399",
+          warning: "#fbbd23",
+          error: "#f87272",
         },
       },
     ],
