@@ -9,17 +9,6 @@ module.exports = {
     extend: {},
   },
 
-  // safelist: [
-  //   { pattern: /bg-./ },
-  //   { pattern: /daisy-./ },
-  //   { pattern: /text-./ },
-  //   { pattern: /border-./ },
-  //   { pattern: /w-./ },
-  //   { pattern: /h-./ },
-  //   { pattern: /rounded-./ },
-  //   "rounded",
-  // ],
-
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 
   // daisyUI config (optional)
